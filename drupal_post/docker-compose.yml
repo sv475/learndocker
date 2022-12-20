@@ -1,0 +1,13 @@
+version: '2'
+
+services: 
+    drupal_test:
+        image: drupal
+        ports: 
+            - "8085:80"
+    db_test:
+        image: postgres
+        environment: 
+            - POSTGRES_DB=drupal
+            - POSTGRES_USER=sahil
+            - POSTGRES_PASSWORD=verma

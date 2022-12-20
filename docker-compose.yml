@@ -1,0 +1,12 @@
+version: '2'
+
+services: 
+    nginx_test:
+        image: nginx:latest
+        ports: 
+            - '88:80'
+        volumes: 
+            - nginx_vol:/usr/share/nginx/html  
+
+volumes: 
+    nginx_vol:           
